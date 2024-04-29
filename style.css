@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    color: black;
+}
+
+#main-container {
+    background-color: rgb(158, 215, 251);
+    height: 90vh;
+    margin-block: 5vh;
+    margin-inline: auto;
+    width: 80%;
+    padding-inline: 5%;
+}
+
+#main-container h2 {
+    text-align: center;
+}
+
+#input-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input-btn-container button {
+    height: 3.5rem;
+}
+
+#activity-list {
+    /* background-color: green; */
+    padding-inline: 1%;
+    padding-block: 1%;
+    height: 50vh;
+}
+
+#activity-list .activity {
+    background-color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* #btn-container button {
+    width: 100%;
+    height: 3rem;
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+
+@media (max-width: 575.5px) {
+    #input-btn-container button {
+        width: 50%;
+    }
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 7px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(158, 215, 251); /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+}
