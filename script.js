@@ -26,13 +26,15 @@ addBtn.addEventListener('click',()=>{
         idCount++;
         activityText.insertAdjacentElement('afterbegin',checkBox);
         checkBoxesArray.push(checkBox);
-        checkBoxesArray[checkBoxesArray.length - 1].firstElementChild.addEventListener('click',()=>{
-            if(checkBoxesArray[checkBoxesArray.length - 1].firstElementChild.checked == true) {
-                checkBoxesArray[checkBoxesArray.length - 1].lastChild.style.textDecoration = 'line-through';
-            } else {
-                checkBoxesArray[checkBoxesArray.length - 1].lastChild.style.textDecoration = 'none';
-            }
-        })
+        for(let i = 0; i < checkBoxesArray.length; i++) {
+            checkBoxesArray[i].firstElementChild.addEventListener('click',()=>{
+                if(checkBoxesArray[i].firstElementChild.checked == true) {
+                    checkBoxesArray[i].lastChild.style.textDecoration = 'line-through';
+                } else {
+                    checkBoxesArray[i].lastChild.style.textDecoration = 'none';
+                }
+            })
+        }
 
         activity.appendChild(deleteBtn);
         deleteBtn.addEventListener('click',()=>{
