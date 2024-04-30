@@ -61,6 +61,9 @@
 } */
 
 @media (max-width: 575.5px) {
+    #input-btn-container {
+        justify-content: center;
+    }
     #input-btn-container button {
         width: 50%;
     }
